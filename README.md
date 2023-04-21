@@ -1,2 +1,2 @@
 # StartenMetJavaScript
-Diverse voorbeelden behorende bij de tutorial Starten MEt Javascript
+Diverse voorbeelden behorende bij de tutorial Starten met Javascript
