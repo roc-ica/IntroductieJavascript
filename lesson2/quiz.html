@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <h1>Quiz</h1>
+</header>
+<main>
+    <form id="quiz-form">
+        <div class="question">
+            <h3 id="question"></h3>
+            <div class="answers">
+                <label>
+                    <input type="radio" name="answer" value="a" />
+                    <span id="answer-a"></span>
+                </label>
+                <label>
+                    <input type="radio" name="answer" value="b" />
+                    <span id="answer-b"></span>
+                </label>
+                <label>
+                    <input type="radio" name="answer" value="c" />
+                    <span id="answer-c"></span>
+                </label>
+                <label>
+                    <input type="radio" name="answer" value="d" />
+                    <span id="answer-d"></span>
+                </label>
+            </div>
+        </div>
+        <button type="submit">Submit</button>
+        <div id="results"></div>
+    </form>
+</main>
+<script src="js/quiz.js"></script>
+</body>
+</html>
