@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Concatenation</title>
+</head>
+<body>
+<script>
+    let str1 = "Hello";
+    let str2 = " world!";
+    let result = str1 + str2;
+    console.log(result); // "Hello world!"
+
+    // getallen worden strings bij concatenatie
+    let x = 5;
+    let y = 10;
+    result = "Het getal is " + x+y; // result wordt "Het getal is 510"
+    console.log(result);
+
+    result = x + y + " is het getal"; // result wordt "15 is het getal"
+    console.log(result);
+
+    // concatenatie met variabelen
+    let str1 = "Hello";
+    let str2 = " beautiful";
+    let str3 = " world!";
+    let result = str1 + str2 + str3;
+    console.log(result); // "Hello beautiful world!"
+
+    // concatenatie met de concat() methode
+    let str1 = "Hello";
+    let str2 = " world!";
+    let result = str1.concat(str2);
+    console.log(result); // "Hello world!"
+
+    // concatenatie van meerdere strings met de concat() methode
+    let str1 = "Hello";
+    let str2 = " beautiful";
+    let str3 = " world!";
+    let result = str1.concat(str2, str3);
+    console.log(result); // "Hello beautiful world!"
+
+    // concatenatie met string literals
+    let str1 = "Hello";
+    let str2 = " world!";
+    let result = `${str1}${str2}, how are you?`;
+    console.log(result); // "Hello world!, how are you?"
+
+    // concatenatie met string literals en variabelen to build a link in HTML
+    let link = "https://www.google.com";
+    let text = "Google";
+    let result = `<a href="${link}">${text}</a>`;
+    console.log(result); // "<a href="https://www.google.com">Google</a>"
+
+    // concatenatie met + operator en variabelen to build a link in HTML
+    let link = "https://www.google.com";
+    let text = "Google";
+    let result = "<a href='" + link + "'>" + text + "</a>";
+    console.log(result); // "<a href="https://www.google.com">Google</a>"
+
+
+
+
+
+
+</script>
+</body>
+</html>
