@@ -7,6 +7,8 @@
 <body>
 
 <script>
+    let x = 6;
+    let y = 9;
     if(x>5) {
         console.log("x is groter dan 5")
     }
@@ -22,6 +24,34 @@
     } else {
         console.log("Je mag nog niet stemmen")
     }
+
+    // mag je brommer en / of autorijden?
+    let leeftijd = 5;
+    if(leeftijd>=16 && leeftijd<18) {
+        console.log("Je mag brommerrijden");
+    } else if (leeftijd>=18 ) {
+        console.log("Je mag auto- en brommerrijden");
+    } else if (leeftijd<16 && leeftijd > 6) {
+        console.log("Je mag nog niet brommer- of autorijden");
+    } else {
+        console.log("Kun jij eigenlijk wel lezen?");
+    }
+
+    // nesting
+    if (leeftijd>=16) {
+        if (leeftijd<18) {
+            console.log("Je mag brommerrijden");
+        } else {
+            console.log("Je mag auto- en brommerrijden");
+        }
+    } else {
+        if (leeftijd > 6) {
+            console.log("Je mag nog niet brommer- of autorijden");
+        } else {
+            console.log("Kun jij eigenlijk wel lezen?");
+        }
+    }
+
 
 </script>
 </body>
