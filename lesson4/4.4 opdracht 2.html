@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Controle structuren en Lussen - Opdracht 2</title>
+</head>
+<body>
+
+<form>
+    <input type="number" name="n1" placeholder="laagste nummer" min="-1000" max="1000">
+    <input type="number" name="n2" placeholder="hoogste nummer" min="-1000" max="1000">
+    <input type="submit" name="submit" value="start">
+</form>
+
+<script>
+    // bereken de som van de getallen vanaf n1 tot en met n2
+    // n1 en n2 zijn de waarden die ingevuld zijn in de inputvelden
+    // toon de uitkomst in een alertbox
+    // gebruik een for loop om de som te berekenen
+
+    const submit = document.querySelector('input[type="submit"]');
+
+    submit.addEventListener('click', function (e) {
+        e.preventDefault();
+        const n1 = document.querySelector("input[name='n1']").value;
+        const n2 = document.querySelector("input[name='n2']").value;
+
+        // schrijf je code hier
+
+    });
+
+
+
+</script>
+</body>
+</html>
