@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Controle structuren en Lussen - Opdracht 1</title>
+</head>
+<body>
+
+  <h1>Controle structuren en Lussen - Opdracht 1</h1>
+  <p>Maak een login systeem en controleer de username en password.
+  In de code vind je de gebruikersnaam van de administrator en die van een normale gebruiker.
+    <br>Na het inloggen toon je een bericht:</p>
+  <p>Bij correct inloggen van een administrator toon je: <span style="font-style: oblique">welkom gebruiker [administrator]</span></p>
+  <p>Bij correct inloggen van een normale gebruiker toon je: <span style="font-style: oblique">welkom gebruiker [gebruikersnaam]</span></p>
+  <p>De waarden tussen de vierkante haken zijn de waarden die ingevuld zijn voor de administrator en gebruikersnaam</p>
+
+  <p>Het getoonde bericht laat je zien middels een <span style="font-style: oblique">alertbox</span></p>
+
+  <form>
+    <input type="text" name="user" placeholder="username">
+    <input type="password" name="password" placeholder="password">
+    <input type="submit" name="submit" value="login">
+  </form>
+
+<script>
+
+    // Gebruikersnaam en wachtwoord van de administrator
+    let adminUser = "admin";
+    let adminPassword = "admin";
+    // Gebruikersnaam en wachtwoord van de normale gebruiker
+    let normalUser = "user";
+    let normalUserPassword = "password";
+
+    const user = document.querySelector("input[name='user']").value;
+    const password = document.querySelector("input[name='password']").value;
+    const submit = document.querySelector('input[type="submit"]');
+    submit.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        // schrijf je code hier
+
+    })
+
+
+</script>
+</body>
+</html>
