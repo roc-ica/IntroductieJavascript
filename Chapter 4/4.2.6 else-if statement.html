@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //if-structuren om leeftijd te bekijken en te bepalen of iemand een rijbewijs mag halen 
+        let age = 15;
+        if(age < 16){
+            console.log("Je mag geen rijbewijzen halen...");
+        }
+        if(age >= 16 && age < 18){
+            console.log("Je mag alleen Brommer en Scooter rijbewijs halen.");
+        }
+        if(age >= 18 && age < 25){
+            console.log("Je mag Auto, lichte motor, Brommer en Scooter rijbewijzen halen.");
+        }
+        if(age >= 25){
+            console.log("Je mag alle rijbewijzen halen!");
+        }
+        
+
+        //een if-structuur met meerdere statements om te bepalen of iemand een rijbewijs mag halen
+        let leeftijd = 15;
+        if(leeftijd >= 25){
+            console.log("Je mag alle rijbewijzen halen!");
+        }else if(leeftijd >= 18){
+            console.log("Je mag Auto, lichte motor, Brommer en Scooter rijbewijzen halen.");
+        }
+        else if(leeftijd >= 16){
+            console.log("Je mag alleen Brommer en Scooter rijbewijs halen.");
+        }
+        else{
+            console.log("Je mag geen rijbewijzen halen...");
+        }
+
+    </script>
+</body>
+</html>
