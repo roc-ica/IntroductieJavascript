@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reiskosten Berekenen</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #007BFF;
+        }
+
+        main {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #resultaat {
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Reiskosten Berekenen</h1>
+
+    <label for="vertrek">Vertrekplaats:</label>
+    <select id="vertrek">
+        <option value="Amsterdam">Amsterdam</option>
+        <option value="Rotterdam">Rotterdam</option>
+        <option value="Utrecht">Utrecht</option>
+        <option value="Amersfoort">Amersfoort</option>
+    </select>
+
+    <label for="bestemming">Bestemmingsplaats:</label>
+    <select id="bestemming">
+        <option value="Amsterdam">Amsterdam</option>
+        <option value="Rotterdam">Rotterdam</option>
+        <option value="Utrecht">Utrecht</option>
+        <option value="Amersfoort">Amersfoort</option>
+    </select>
+
+    <button onclick="berekenReiskosten()">Bereken Reiskosten</button>
+
+    <div id="resultaat"></div>
+</main>
+
+<!-- JavaScript-code ontbreekt hier -->
+</body>
+</html>
