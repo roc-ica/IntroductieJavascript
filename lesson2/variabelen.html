@@ -11,6 +11,20 @@
     const y = "Hello";
     var z = true;
     x = 20;
+
+    // scope voorbeeld  
+    let myvar = 100;
+    // let myvar = 200; // expected output: Identifier 'myvar' has already been declared
+    
+    // create a new scope with {}
+    {
+        let myvar = 200;
+        console.log(myvar); // expected output: 200
+    }
+
+    console.log(myvar); // expected output: 100
+
+
 </script>
 </body>
 </html>
