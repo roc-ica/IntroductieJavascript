@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
 </head>
+
 <body>
     <button onclick="showMessage()">Klik op mij!</button>
     <script>
         function showMessage() {
             alert("Hello World!");
         }
+
+        // Alert: To show a message
+        alert("Dit is een waarschuwing!");
+
+        // Prompt: To get user input
+        let naam = prompt("Wat is je naam?");
+        alert("Hallo, " + naam + "! Welkom.");
+
+        // Confirm: To get a yes/no response
+        let bevestiging = confirm("Ben je zeker dat je door wilt gaan?");
+        if (bevestiging) {
+            alert("Je hebt bevestigd!");
+        } else {
+            alert("Je hebt geannuleerd.");
+        }
+
     </script>
 </body>
+
 </html>
